@@ -1,0 +1,13 @@
+<hr/>
+하위 컴포넌트
+<p *ngIf="product.price > 700">
+    <button (click)="notify.emit()">Notify Me</button>
+    하위 컴포넌트에 부모 컴포넌트가 객체를 전달하려면 넘겨 받는 객체를 @Input() 으로 선언한다.
+    Component 셀렉터 명칭을 태그명으로 하고 넘겨주는 객체를 속성으로 처리 한다. [product]="product"
+    그리고 부모에게 이벤트 전달 할때는 @Output()로 선언 하고  new EventEmitter();를 대입한다. 
+    이 역시 부모 컴포넌트에서 선언한 태그에 (notify)="onNotify()" 속성을 추가 해서 전달한다.
+</p>
+<hr/>
+
+
+    

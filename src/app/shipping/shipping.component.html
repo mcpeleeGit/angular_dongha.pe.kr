@@ -1,0 +1,12 @@
+<!-- Masthead-->
+<header class="masthead">
+    <div class="container">
+        <p>[routerLink] 속성으로 라우팅 패스를 사용할 수 있다.</p>
+    </div>
+</header>
+<h3>Shipping Prices</h3>
+
+<div class="shipping-item" *ngFor="let shipping of shippingCosts | async">
+  <span>{{ shipping.type }}</span>
+  <span>{{ shipping.price | currency }}</span>
+</div>
